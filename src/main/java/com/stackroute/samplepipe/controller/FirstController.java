@@ -19,4 +19,10 @@ public class FirstController {
 	{
 		return new ResponseEntity<String>("we learnt aws cicd",HttpStatus.OK);
 	}
+	
+	@GetMapping("/api/news")
+	public ResponseEntity<?> getNews()
+	{
+		return new ResponseEntity<String>("Earthquake in Japan L 1st Jan",HttpStatus.OK);
+	}
 }
